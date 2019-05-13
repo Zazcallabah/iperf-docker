@@ -1,0 +1,8 @@
+version: "3"
+services:
+  iperf3:
+    image: iperf3:latest
+    build: ./
+    restart: unless-stopped
+    ports:
+      - 22222:22222
